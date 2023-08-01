@@ -1,0 +1,205 @@
+/* You can add global styles to this file, and also import other style files */
+.proyects .proyect-container {
+  height: 360px;
+  margin: 100px 0;
+}
+.proyects .proyect-container .proyect-info-left {
+  width: 50%;
+  margin-right: -57px;
+  margin-left: 0px;
+  display: table;
+}
+.proyects .proyect-container .proyect-info-right {
+  width: 50%;
+  margin-left: -57px;
+  margin-right: 0px;
+  display: table;
+}
+.proyects .proyect-container .proyect-box {
+  display: table-cell;
+  vertical-align: middle;
+}
+.proyects .proyect-container .proyect-box .feature-proyect {
+  font-size: 13px;
+  font-weight: normal;
+  color: #64ffda;
+  font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, Monospace;
+  margin-top: 10px;
+  padding-top: 0;
+}
+.proyects .proyect-container .proyect-box .proyect-name {
+  font-size: 28px;
+  margin: 0 0 20px;
+  color: #ccd6f6;
+}
+.proyects .proyect-container .proyect-box .proyect-description-box {
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  background-color: #112240;
+  color: #a8b2d1;
+  font-size: 18px;
+  border-radius: 3px;
+}
+.proyects .proyect-container .proyect-box .proyect-skills {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 25px 0 10px;
+  list-style: none;
+}
+.proyects .proyect-container .proyect-box .proyect-skills li {
+  margin-right: 0;
+  font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, Monospace;
+  font-size: 13px;
+  color: #8892b0;
+  margin-bottom: 7px;
+  white-space: nowrap;
+}
+.proyects .proyect-container .proyect-box .proyect-skills li .technology {
+  padding-bottom: 5px;
+}
+.proyects .proyect-container .proyect-box .proyect-links {
+  margin-top: 10px;
+}
+.proyects .proyect-container .proyect-box .proyect-links i {
+  font-size: 22px;
+}
+
+.owl-carousel-o {
+  width: 600px;
+}
+
+.img-feature-proyect-container {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .owl-carousel-o {
+    display: none;
+  }
+  .img-feature-proyect-container {
+    width: 50%;
+    display: table !important;
+    height: -webkit-fill-available;
+  }
+  .img-feature-proyect-container .img-feature-proyect-box {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .img-feature-proyect-container .img-feature-proyect {
+    width: 100%;
+  }
+  .proyect-info-right,
+  .proyect-info-left {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .proyect-info-right,
+  .proyect-info-left {
+    background-image: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .owl-carousel-o {
+    display: none;
+  }
+  .proyects .proyect-container {
+    height: 100% !important;
+    margin: 33px 0 !important;
+  }
+  .proyects .proyect-container .proyect-info-left {
+    width: 100%;
+  }
+  .proyects .proyect-container .proyect-info-right {
+    width: 100%;
+  }
+  .proyects .proyect-container .proyect-description-box {
+    padding: 0px !important;
+    box-shadow: none !important;
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    background-color: transparent !important;
+    color: #a8b2d1;
+    font-size: 18px;
+    border-radius: 3px;
+  }
+  .proyects .proyect-container .proyect-info-right,
+  .proyects .proyect-container .proyect-info-left {
+    display: block !important;
+    margin: 0px !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+  }
+  .proyects .proyect-container .proyect-info-right .proyect-box,
+  .proyects .proyect-container .proyect-info-left .proyect-box {
+    display: block;
+  }
+  .proyects .proyect-container .img-feature-proyect-container {
+    display: none;
+  }
+  .proyects .proyect-info-right,
+  .proyects .proyect-info-left {
+    padding: 0px;
+  }
+  .proyects .text-right,
+  .proyects .text-left {
+    text-align: center !important;
+  }
+  .proyects .justify-content-end {
+    justify-content: center !important;
+  }
+  .proyects .justify-content-start {
+    justify-content: center !important;
+  }
+  .proyects .proyect-info-right .proyect-box,
+  .proyects .proyect-info-left .proyect-box {
+    padding: 20px;
+    background: rgba(10, 25, 47, 0.8901960784);
+  }
+}
+::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+::ng-deep .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: white !important;
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.img-container {
+  width: 600px;
+  max-height: 320px;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8892b0;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #64ffda;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}/*# sourceMappingURL=proyects.component.css.map */
